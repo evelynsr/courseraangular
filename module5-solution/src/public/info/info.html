@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div ng-if="!info.user.username">
+      No hay información, favor de registrarse
+    </div>
+    <div ng-if="info.user.username">
+    <div class="row">
+        <div class="col-md-2">
+          Name:
+        </div>
+        <div class="col-md-4">
+          {{info.user.username}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+          Lastname:
+        </div>
+        <div class="col-md-4">
+          {{info.user.lastname}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        Email:
+        </div>
+        <div class="col-md-4">
+        {{info.user.email}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        Phone:
+        </div>
+        <div class="col-md-4">
+        {{info.user.phone}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        Favorite Dish:
+        </div>
+        <div class="col-md-4">
+        {{info.user.info_dish.short_name}} - {{info.user.info_dish.name}}
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
