@@ -16,7 +16,7 @@
         reg.dish_exists = true;
         reg.user.info_dish = response;
         InfoService.setUserInfo(reg.user);
-        reg.mensaje = "Se guardaron los datos";
+        reg.mensaje = "The data was saved";
       },function (errorResponse) {
         reg.dish_exists = false;
         reg.mensaje = "";
